@@ -1,0 +1,369 @@
+:root {
+  --color-primery: #ffd900;
+  --color-hero-background: #1a1600;
+  --color-headings: #c2b7b7;
+  --color-body: #ffffff;
+  --color-icon-background: #5c5b5b;
+  --color-section-baground: #1b1b1b;
+  --Border-Radius: 7px;
+}
+
+body {
+  font-family: "Times New Roman", Times, serif;
+  color: var(--color-body);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--color-headings);
+  margin-bottom: 1rem;
+  line-height: 1.1;
+}
+h1 {
+  font-size: 3rem;
+}
+h2 {
+  font-size: 2rem;
+}
+a {
+  color: #8aaae5;
+}
+
+.icon--white {
+  fill: white;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 450px) {
+  h1 {
+    font-size: 1rem;
+  }
+  p {
+    font-size: 0.8rem;
+  }
+}
+
+.btn {
+  text-decoration: none;
+  background: var(--color-primery);
+  background-color: var(--color-primery);
+  font-weight: 400;
+  font-size: 1.25rem;
+  padding: 0.5% 10%;
+  outline: none;
+  border: none;
+  border-radius: 10px;
+  color: black;
+}
+
+.btn-secondary {
+  background-color: var(--color-icon-background);
+}
+
+.btn:hover {
+  background: #7f6d13;
+}
+
+header {
+  display: flex;
+  width: 100%;
+  height: 9.5vh;
+  background-color: var(--color-hero-background);
+  position: sticky;
+  top: 0px;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 3;
+  flex-wrap: wrap;
+}
+
+.logo {
+  margin: 0;
+  flex: 0 1 auto;
+  color: var(--color-body);
+
+  font-size: 1rem;
+  font-family: "Uncial Antiqua";
+  font-weight: 100;
+  opacity: 80%;
+  margin-left: 3%;
+  white-space: nowrap;
+}
+
+.btn-tagle {
+  background: none;
+  border: none;
+  margin-right: 5%;
+  flex-shrink: 1;
+  opacity: 0.7;
+}
+
+.icon-aside {
+  width: 30px;
+  height: 30px;
+}
+
+.btn-tagle:hover {
+  opacity: 1;
+}
+
+.btn-link {
+  background-color: #ccf381;
+  border-radius: 12px;
+  padding: 5px 10px;
+  text-decoration: none;
+  color: blue;
+}
+.btn-link::after {
+  font-family: "Courier New", Courier, monospace;
+  content: "->";
+}
+.btn-link:hover::after {
+  position: relative;
+  left: 7px;
+}
+
+.btn-link:hover {
+  background-color: aliceblue;
+}
+
+.hero {
+  width: 100vw;
+  height: 90.5vh;
+  background-color: #101820;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-image: url("images/webdev.4d72dbba32efee3890cef9bcacce7aa7.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  opacity: 0.8;
+
+  z-index: 2;
+}
+.hero-Hgroup {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+.hero-Hgroup > p {
+  color: #00ffff;
+  font-size: 1rem;
+  font-weight: bolder;
+  text-shadow: 1px 1px 1px rgb(0, 0, 0);
+  margin: 0;
+}
+.hero-heading {
+  color: var(--color-primery);
+  font-family: cursive;
+}
+.hero-image {
+  width: 45vw;
+  height: 73vh;
+  display: none; /*  this will maneged by media query */
+}
+
+.main-aside {
+  display: flex;
+  gap: 3%;
+  justify-content: center;
+  flex-grow: 1;
+  flex-basis: auto;
+  margin: 1rem 0;
+  overflow-x: auto;
+}
+
+main {
+  /*--- flex: 1 1 auto; ---*/
+  max-width: 900px;
+}
+
+/* ------------------Card  --start------------------------------------- */
+
+.card {
+  background-color: rgb(61, 58, 58);
+
+  border-radius: 7px;
+  box-shadow: 0 0 20px 10px #3b3737;
+  /* overflow: hidden; */
+  display: flex;
+  gap: 5%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  box-sizing: border-box;
+  flex-direction: column;
+  margin: 4% 10%;
+  border: wheat solid 1px;
+  max-width: 900px;
+
+  /* flex-wrap: wrap; */
+}
+
+.video-content,
+.image-content img {
+  max-width: 300px;
+  align-self: center;
+  width: 100%;
+  height: auto;
+  flex-shrink: 1;
+  justify-self: center;
+}
+
+.image-content {
+  /* padding: 2%; */
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+.content {
+  flex: 1 1 48%;
+
+  padding: 0.5rem;
+  word-wrap: break-word;
+}
+
+.card h1 {
+  color: var(--color-primery);
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  background: var(--color-section-baground);
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-grow: 1;
+  flex-direction: column;
+}
+
+.copyright .icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  float: right;
+}
+
+.copyright {
+  margin: 0;
+  text-align: center;
+}
+.social-midea {
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+  /* justify-content: space-evenly; */
+  flex-wrap: wrap;
+}
+.social-midea > a {
+  text-decoration: none;
+  width: 24px;
+  height: 24px;
+}
+.social-midea .icon {
+  width: 1rem;
+  height: 1rem;
+}
+
+/* _____________________ABOUTPAGE______________________________________________________ */
+
+.icon-box {
+  text-align: center;
+  color: var(--color-body);
+}
+
+.tools-heading {
+  margin-bottom: 0px;
+  font-size: large;
+  color: var(--color-primery);
+}
+
+.tools {
+  display: flex;
+  flex-wrap: wrap;
+  width: 80%;
+  gap: 2rem;
+  background-color: #3b3737;
+  justify-content: center;
+  padding: 5% 0%;
+  border-radius: 15px;
+  margin: 2% 10%;
+}
+.icon-container {
+  background: #d9ff7a;
+  width: 84px;
+  height: 50px;
+  border-radius: 10%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+.toolicon {
+  width: 46px;
+  height: 46px;
+}
+
+/* _________________________________Contact__________________________________________ */
+
+.contact {
+  color: var(--color-body);
+  background: var(--color-section-baground);
+  margin: 10%;
+  padding: 3%;
+  border-radius: 7px;
+  width: 80%;
+  height: auto;
+}
+
+.contact label {
+  display: block;
+  margin-top: 3%;
+  color: var(--color-primery);
+  font-size: 1.25rem;
+}
+
+#name,
+#email,
+textarea {
+  border: 0.01px solid rgb(133, 133, 131);
+  background-color: var(--color-section-baground);
+  width: 50%;
+  padding: 0.6rem;
+  border-radius: 10px;
+  margin-top: 0.5rem;
+  color: var(--color-body);
+}
+
+/* ____________________________________________________CV_______________________________________________ */
+
+.pdfviewer {
+  color: var(--color-body);
+  background: var(--color-section-baground);
+  margin: 10%;
+  padding: 3%;
+  border-radius: 7px;
+  width: 80%;
+  height: auto;
+}
+
+.pdfviewer .btn {
+  display: block;
+  align-self: center;
+  margin: 1rem auto;
+  max-width: 100px;
+}
+
+.pdfviewer embed {
+  margin-left: 10%;
+}
+
+.cv-image {
+  width: 80%;
+  height: 80%;
+  margin-left: 8.89%;
+}
