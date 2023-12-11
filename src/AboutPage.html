@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -13,27 +13,89 @@
       rel="stylesheet"
     />
 
-    <title>about</title>
+    <title>About</title>
   </head>
   <body>
     <header>
-      <h2 class="logo">Eyob Derese</h2>
-
-      <button class="btn-tagle">
-        <svg class="icon-aside icon--white">
+      <h2 class="header__logo">Eyob Derese</h2>
+      <nav>
+        <ul class="header__navigation">
+          <li><a class="nav__item" href="HomePage.html">Home</a></li>
+          <li><a class="nav__item" href="AboutPage.html">About</a></li>
+          <li><a class="nav__item" href="ProjectPage.html">Project</a></li>
+          <li>
+            <a class="nav__item" href="RecommendationPage.html"
+              >Recommendation</a
+            >
+          </li>
+          <li><a class="nav__item" href="CVPage.html">CV</a></li>
+          <li><a class="nav__item" href="ContactPage.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="header__btn--tagle">
+        <svg class="aside__icon icon--white">
           <use xlink:href="images/sprite.svg#three-horizontal-lines-icon"></use>
         </svg>
       </button>
     </header>
 
     <div class="main-aside">
+      <aside class="aside">
+        <div class="aside__header">
+          <img
+            class="aside__image"
+            src="images/cartoon.jpg"
+            alt="eyob's photo"
+          />
+          <button class="btn btn--secondary">Eyob Derese</button>
+        </div>
+
+        <section class="aside__information">
+          <div class="aside__contact">
+            <span class="aside__icon-container">
+              <svg class="aside__icon icon--primery">
+                <use xlink:href="images/sprite.svg#envelope-line-icon"></use>
+              </svg>
+            </span>
+            <p><span>Email</span> eyob.derese@aait.edu.et</p>
+          </div>
+
+          <div class="aside__contact">
+            <span class="aside__icon-container">
+              <svg class="aside__icon icon--primery">
+                <use xlink:href="images/sprite.svg#smartphone-icon"></use>
+              </svg>
+            </span>
+            <p><span>Phone</span> +251-973385181</p>
+          </div>
+
+          <div class="aside__contact">
+            <span class="aside__icon-container">
+              <svg class="aside__icon icon--primery">
+                <use xlink:href="images/sprite.svg#maps-pin-line-icon"></use>
+              </svg>
+            </span>
+            <span>Location</span>
+            <address>Addis Ababa, Ethiopia</address>
+          </div>
+
+          <div class="aside__contact">
+            <span class="aside__icon-container">
+              <svg class="aside__icon icon--primery">
+                <use xlink:href="images/sprite.svg#calendar-blank-icon"></use>
+              </svg>
+            </span>
+            <p><span>Birthday</span>20-05-2002</p>
+          </div>
+        </section>
+      </aside>
       <main>
         <section class="card">
-          <figure class="image-content">
+          <figure class="card__image-content">
             <img src="images/picture2.jpg" alt="Eyob's Photo" />
           </figure>
 
-          <div class="content">
+          <div class="card__content">
             <h1>A little more about me</h1>
             <p>
               In the dynamic universe of software engineering, I find myself
@@ -59,17 +121,17 @@
         </section>
 
         <section class="icon-box">
-          <h2 class="tools-heading">My skill set</h2>
-          <div class="tools">
+          <h2 class="icon-box__heading">My skill set</h2>
+          <div class="icon-box__tools">
             <span class="icon-container"
               ><img
-                class="toolicon"
+                class="icon--tool"
                 src="images/icons/branching-icon.svg"
                 alt=""
             /></span>
             <span class="icon-container"
               ><img
-                class="toolicon"
+                class="icon--tool"
                 src="images/icons/icons8-bootstrap.svg"
                 alt=""
             /></span>
@@ -80,80 +142,98 @@
               ><img src="images/icons/icons8-css.svg" alt=""
             /></span>
             <span class="icon-container"
-              ><img class="toolicon" src="images/icons/icons8-figma.svg" alt=""
+              ><img
+                class="icon--tool"
+                src="images/icons/icons8-figma.svg"
+                alt=""
             /></span>
             <span class="icon-container"
-              ><img class="toolicon" src="images/icons/icons8-git.svg" alt=""
+              ><img class="icon--tool" src="images/icons/icons8-git.svg" alt=""
             /></span>
             <span class="icon-container"
               ><img
-                class="toolicon"
+                class="icon--tool"
                 src="images/icons/icons8-gitkraken.svg"
                 alt=""
             /></span>
             <span class="icon-container"
               ><img
-                class="toolicon"
+                class="icon--tool"
                 src="images/icons/icons8-html-50.png"
                 alt=""
             /></span>
             <span class="icon-container"
-              ><img class="toolicon" src="images/icons/icons8-java.svg" alt=""
+              ><img
+                class="icon--tool"
+                src="images/icons/icons8-java.svg"
+                alt=""
             /></span>
             <span class="icon-container"
               ><img
-                class="toolicon"
+                class="icon--tool"
                 src="images/icons/icons8-javascript.svg"
                 alt=""
             /></span>
             <span class="icon-container"
               ><img
-                class="toolicon"
+                class="icon--tool"
                 src="images/icons/icons8-mongo-db-64.png"
                 alt=""
             /></span>
             <span class="icon-container"
-              ><img class="toolicon" src="images/icons/icons8-mysql.svg" alt=""
+              ><img
+                class="icon--tool"
+                src="images/icons/icons8-mysql.svg"
+                alt=""
             /></span>
             <span class="icon-container"
               ><img
-                class="toolicon"
+                class="icon--tool"
                 src="images/icons/icons8-node-32.png"
                 alt=""
             /></span>
             <span class="icon-container"
               ><img
-                class="toolicon"
+                class="icon--tool"
                 src="images/icons/icons8-python.svg"
                 alt=""
             /></span>
             <span class="icon-container"
-              ><img class="toolicon" src="images/icons/icons8-react.svg" alt=""
+              ><img
+                class="icon--tool"
+                src="images/icons/icons8-react.svg"
+                alt=""
             /></span>
             <span class="icon-container"
               ><img
-                class="toolicon"
+                class="icon--tool"
                 src="images/icons/icons8-typescript.svg"
                 alt=""
             /></span>
             <span class="icon-container"
-              ><img class="toolicon" src="images/icons/icons8-vite.svg" alt=""
+              ><img
+                class="icon--tool"
+                src="images/icons/icons8-vite.svg"
+                alt=""
             /></span>
           </div>
         </section>
 
         <section class="icon-box">
-          <h2 class="tools-heading">Tooles that I used</h2>
-          <div class="tools">
+          <h2 class="icon-box__heading">Tooles that I used</h2>
+          <div class="icon-box__tools">
             <span class="icon-container"
-              ><img class="toolicon" src="images/icons/icons8-figma.svg" alt=""
+              ><img
+                class="icon--tool"
+                src="images/icons/icons8-figma.svg"
+                alt=""
             /></span>
             <span class="icon-container"
-              ><img class="toolicon" src="images/icons/icons8-git.svg" alt=""
+              ><img class="icon--tool" src="images/icons/icons8-git.svg" alt=""
             /></span>
             <span class="icon-container"
               ><img
-                class="toolicon"
+                class="icon--tool"
                 src="images/icons/branching-icon.svg"
                 alt=""
             /></span>
@@ -163,39 +243,45 @@
             /></span>
             <span class="icon-container"
               ><img
-                class="toolicon"
+                class="icon--tool"
                 src="images/icons/icons8-gitkraken.svg"
                 alt=""
             /></span>
 
             <span class="icon-container"
-              ><img class="toolicon" src="images/icons/icons8-mysql.svg" alt=""
+              ><img
+                class="icon--tool"
+                src="images/icons/icons8-mysql.svg"
+                alt=""
             /></span>
 
             <span class="icon-container"
               ><img
-                class="toolicon"
+                class="icon--tool"
                 src="images/icons/icons8-vs-code.svg"
                 alt=""
             /></span>
             <span class="icon-container"
               ><img
-                class="toolicon"
+                class="icon--tool"
                 src="images/icons/icons8-intellij-idea.svg"
                 alt=""
             /></span>
             <span class="icon-container"
-              ><img class="toolicon" src="images/icons/icons8-vite.svg" alt=""
+              ><img
+                class="icon--tool"
+                src="images/icons/icons8-vite.svg"
+                alt=""
             /></span>
             <span class="icon-container"
               ><img
-                class="toolicon"
+                class="icon--tool"
                 src="images/icons/icons8-anaconda.svg"
                 alt=""
             /></span>
             <span class="icon-container"
               ><img
-                class="toolicon"
+                class="icon--tool"
                 src="images/icons/icons8-photoshop.svg"
                 alt=""
             /></span>
@@ -203,11 +289,11 @@
         </section>
 
         <section class="card">
-          <figure class="image-content">
+          <figure class="card__image-content">
             <img src="images/Aksum.jpg" alt="Aksume" />
           </figure>
 
-          <div class="content">
+          <div class="card__content">
             <h1>A place I want to go</h1>
             <p>
               The UNESCO World Heritage Site of Aksum stands as a living
@@ -224,21 +310,15 @@
               conversations that bridge the gap between my world and theirs.
             </p>
 
-            <a class="btn-link" href="#">More about Aksume...</a>
+            <a class="btn--link" href="#">Aksume</a>
           </div>
         </section>
       </main>
     </div>
 
     <footer>
-      <p class="copyright">
-        copyright &copy; 2023 devlelop with
-        <svg class="icon">
-          <use xlink:href="images/sprite.svg#red-heart-icon"></use>
-        </svg>
-        by Eyob
-      </p>
-      <div class="social-midea">
+      <p class="footer__copyright">copyright &copy; 2023 devlelop by Eyob</p>
+      <div class="footer__social-midea">
         <a href="#">
           <svg class="icon icon--white">
             <use

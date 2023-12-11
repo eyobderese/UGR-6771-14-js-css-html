@@ -3,30 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="stylesheet" href="CSS/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="CSS/style.css" />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Kaushan+Script&family=Uncial+Antiqua&display=swap"
       rel="stylesheet"
     />
-
     <title>Contact</title>
   </head>
   <body>
     <header>
-      <h2 class="logo">Eyob Derese</h2>
-
-      <button class="btn-tagle">
-        <svg class="icon-aside icon--white">
+      <h2 class="header__logo">Eyob Derese</h2>
+      <nav>
+        <ul class="header__navigation">
+          <li><a class="nav__item" href="HomePage.html">Home</a></li>
+          <li><a class="nav__item" href="AboutPage.html">About</a></li>
+          <li><a class="nav__item" href="ProjectPage.html">Project</a></li>
+          <li>
+            <a class="nav__item" href="RecommendationPage.html"
+              >Recommendation</a
+            >
+          </li>
+          <li><a class="nav__item" href="CVPage.html">CV</a></li>
+          <li><a class="nav__item" href="ContactPage.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="header__btn--tagle">
+        <svg class="aside__icon icon--white">
           <use xlink:href="images/sprite.svg#three-horizontal-lines-icon"></use>
         </svg>
       </button>
     </header>
 
     <div class="main-aside">
+      <aside class="aside">
+        <div class="aside__header">
+          <img
+            class="aside__image"
+            src="images/cartoon.jpg"
+            alt="eyob's photo"
+          />
+          <button class="btn btn--secondary">Eyob Derese</button>
+        </div>
+
+        <section class="aside__information">
+          <div class="aside__contact">
+            <span class="aside__icon-container">
+              <svg class="aside__icon icon--primery">
+                <use xlink:href="images/sprite.svg#envelope-line-icon"></use>
+              </svg>
+            </span>
+            <p><span>Email</span> eyob.derese@aait.edu.et</p>
+          </div>
+
+          <div class="aside__contact">
+            <span class="aside__icon-container">
+              <svg class="aside__icon icon--primery">
+                <use xlink:href="images/sprite.svg#smartphone-icon"></use>
+              </svg>
+            </span>
+            <p><span>Phone</span> +251-973385181</p>
+          </div>
+
+          <div class="aside__contact">
+            <span class="aside__icon-container">
+              <svg class="aside__icon icon--primery">
+                <use xlink:href="images/sprite.svg#maps-pin-line-icon"></use>
+              </svg>
+            </span>
+            <span>Location</span>
+            <address>Addis Ababa, Ethiopia</address>
+          </div>
+
+          <div class="aside__contact">
+            <span class="aside__icon-container">
+              <svg class="aside__icon icon--primery">
+                <use xlink:href="images/sprite.svg#calendar-blank-icon"></use>
+              </svg>
+            </span>
+            <p><span>Birthday</span>20-05-2002</p>
+          </div>
+        </section>
+      </aside>
+
       <main>
         <section class="contact">
           <h1 class="heading">Contact Me</h1>
@@ -58,14 +118,8 @@
     </div>
 
     <footer>
-      <p class="copyright">
-        copyright &copy; 2023 devlelop with
-        <svg class="icon">
-          <use xlink:href="images/sprite.svg#red-heart-icon"></use>
-        </svg>
-        by Eyob
-      </p>
-      <div class="social-midea">
+      <p class="footer__copyright">copyright &copy; 2023 devlelop by Eyob</p>
+      <div class="footer__social-midea">
         <a href="#">
           <svg class="icon icon--white">
             <use

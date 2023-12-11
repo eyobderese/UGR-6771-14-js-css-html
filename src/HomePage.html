@@ -3,77 +3,143 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="stylesheet" href="CSS/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="CSS/style.css" />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Kaushan+Script&family=Uncial+Antiqua&display=swap"
       rel="stylesheet"
     />
-
-    <title>Hmoe Page</title>
+    <title>Home</title>
   </head>
   <body>
     <header>
-      <h2 class="logo">Eyob Derese</h2>
-
-      <button class="btn-tagle">
-        <svg class="icon-aside icon--white">
+      <h2 class="header__logo">Eyob Derese</h2>
+      <nav>
+        <ul class="header__navigation">
+          <li><a class="nav__item" href="HomePage.html">Home</a></li>
+          <li><a class="nav__item" href="AboutPage.html">About</a></li>
+          <li><a class="nav__item" href="ProjectPage.html">Project</a></li>
+          <li>
+            <a class="nav__item" href="RecommendationPage.html"
+              >Recommendation</a
+            >
+          </li>
+          <li><a class="nav__item" href="CVPage.html">CV</a></li>
+          <li><a class="nav__item" href="ContactPage.html">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="header__btn--tagle">
+        <svg class="aside__icon icon--white">
           <use xlink:href="images/sprite.svg#three-horizontal-lines-icon"></use>
         </svg>
       </button>
     </header>
     <section class="hero">
-      <hgroup class="hero-Hgroup">
-        <h1 class="hero-heading">Hi, I am Eyob Derese</h1>
+      <hgroup class="hero__Hgroup">
+        <h1 class="hero__heading">Hi, I am Eyob Derese</h1>
 
         <p>I am full stack web devloper</p>
         <p>mobile App devloper</p>
         <p>Open source contributor</p>
-        <p><a class="btn" href="#">CV</a></p>
+        <p class="btn--p"><a class="btn" href="CVPage.html">CV</a></p>
       </hgroup>
 
       <img
-        class="hero-image"
+        class="hero__image"
         src="images/webdev.4d72dbba32efee3890cef9bcacce7aa7.png"
         alt="hero image"
       />
     </section>
 
     <div class="main-aside">
+      <aside class="aside">
+        <div class="aside__header">
+          <img
+            class="aside__image"
+            src="images/cartoon.jpg"
+            alt="eyob's photo"
+          />
+          <button class="btn btn--secondary">Eyob Derese</button>
+        </div>
+
+        <section class="aside__information">
+          <div class="aside__contact">
+            <span class="aside__icon-container">
+              <svg class="aside__icon icon--primery">
+                <use xlink:href="images/sprite.svg#envelope-line-icon"></use>
+              </svg>
+            </span>
+            <p><span>Email</span> eyob.derese@aait.edu.et</p>
+          </div>
+
+          <div class="aside__contact">
+            <span class="aside__icon-container">
+              <svg class="aside__icon icon--primery">
+                <use xlink:href="images/sprite.svg#smartphone-icon"></use>
+              </svg>
+            </span>
+            <p><span>Phone</span> +251-973385181</p>
+          </div>
+
+          <div class="aside__contact">
+            <span class="aside__icon-container">
+              <svg class="aside__icon icon--primery">
+                <use xlink:href="images/sprite.svg#maps-pin-line-icon"></use>
+              </svg>
+            </span>
+            <span>Location</span>
+            <address>Addis Ababa, Ethiopia</address>
+          </div>
+
+          <div class="aside__contact">
+            <span class="aside__icon-container">
+              <svg class="aside__icon icon--primery">
+                <use xlink:href="images/sprite.svg#calendar-blank-icon"></use>
+              </svg>
+            </span>
+            <p><span>Birthday</span>20-05-2002</p>
+          </div>
+        </section>
+      </aside>
+
       <main>
         <section class="card">
-          <figure class="image-content">
+          <figure class="card__image-content">
             <img
               src="images/photo_5945213320648834131_x.jpg"
               alt="Eyob's Photo"
             />
           </figure>
 
-          <div class="content">
+          <div class="card__content">
             <h1>Hi there ?</h1>
-            <p>
+            <p class="card__content-text">
               Greetings! I am a third-year software engineering student at Addis
               Ababa University. My passion lies in programming and engineering.
               Additionally, I enjoy playing table tennis, and I find joy in
               engaging with people and understanding their emotions.
             </p>
 
-            <button class="btn btn--small">Read More</button>
+            <p class="card__content-text card__addtional-text">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Non
+              aperiam ipsam magnam eligendi consequatur consectetur voluptas,
+              eius quis laudantium tempora.
+            </p>
+
+            <button class="btn btn--small" id="button-1">Read More</button>
           </div>
         </section>
 
         <section class="card">
-          <figure class="image-content">
+          <figure class="card__image-content">
             <img src="images/moshAmedani.jpg" alt="Mosh Amedani" />
 
             <figcaption>
               <a href="#">Mosh Amedani</a>,Googel claud engineer
             </figcaption>
           </figure>
-          <div class="content">
+          <div class="card__content">
             <h1>Let me tell you about Eyob</h1>
             <p>
               I highly recommend Eyob Derese as a software engineer who not only
@@ -94,11 +160,11 @@
         </section>
 
         <section class="card">
-          <figure class="image-content">
+          <figure class="card__image-content">
             <img src="images/Aksum.jpg" alt="Aksume" />
           </figure>
 
-          <div class="content">
+          <div class="card__content">
             <h1>A place I want to go</h1>
             <p>
               The UNESCO World Heritage Site of Aksum stands as a living
@@ -115,21 +181,16 @@
               conversations that bridge the gap between my world and theirs.
             </p>
 
-            <a class="btn-link" href="#">More about Aksume...</a>
+            <a class="btn--link" href="#">Aksume</a>
           </div>
         </section>
       </main>
     </div>
 
     <footer>
-      <p class="copyright">
-        copyright &copy; 2023 devlelop with
-        <svg class="icon">
-          <use xlink:href="images/sprite.svg#red-heart-icon"></use>
-        </svg>
-        by Eyob
-      </p>
-      <div class="social-midea">
+      <p class="footer__copyright">copyright &copy; 2023 devlelop by Eyob</p>
+
+      <div class="footer__social-midea">
         <a href="#">
           <svg class="icon icon--white">
             <use
