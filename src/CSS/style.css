@@ -160,7 +160,7 @@ nav {
 }
 
 .header--active {
-  height: 40vh;
+  height: auto;
   align-items: start;
   transition: height 0.3s ease-in-out;
 }
