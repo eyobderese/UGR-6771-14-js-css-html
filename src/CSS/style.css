@@ -266,7 +266,7 @@ nav {
 .hero__image {
   width: 45vw;
   height: 73vh;
-  display: none; /*  this will maneged by midea query */
+  display: none; 
 }
 
 @media screen and (min-width: 480px) {
@@ -288,14 +288,14 @@ nav {
   flex-basis: auto;
   margin: 1rem 0;
   background-image: url(../images/download.png);
-  /* overflow-x: auto; */
+  
 }
 
 main {
   max-width: 900px;
 }
 
-/* -------------------------------aside------------------------------ */
+/* -------------------------------aside start------------------------------ */
 .aside {
   width: 30%;
   height: 80%;
@@ -380,7 +380,7 @@ main {
   }
 }
 
-/* ------------------Card  --start------------------------------------- */
+/* ------------------Card-start------------------------------------- */
 
 .card {
   background-color: rgb(61, 58, 58);
@@ -400,7 +400,6 @@ main {
   justify-content: center;
   align-items: stretch;
 
-  /* flex-wrap: wrap; */
 }
 
 .card__video-content,
@@ -466,7 +465,6 @@ footer {
   display: flex;
   gap: 1vw;
   align-items: center;
-  /* justify-content: space-evenly; */
   flex-wrap: wrap;
 }
 .footer__social-midea > a {
