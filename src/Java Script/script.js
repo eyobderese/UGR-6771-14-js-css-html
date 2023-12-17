@@ -7,9 +7,8 @@ humbutger.addEventListener("click", () => {
   header.classList.toggle("header--active");
 });
 
-function adddingReadMoreListener(button, content) {
+function adddingReadMoreListener(button) {
   const textButton = document.querySelector(button);
-  const textcontent = document.querySelector(".card__addtional-text");
   let isShowLess = true;
 
   textButton.addEventListener("click", () => {
@@ -28,4 +27,4 @@ function adddingReadMoreListener(button, content) {
 
 adddingReadMoreListener(".btn--read-more");
 adddingReadMoreListener(".btn--read-more-1");
-adddingReadMoreListener(".btn--read-more-2");
+adddingReadMoreListener(".btn--read-more-2"); //give error for home-page / because the home page doesn't have btn-2
