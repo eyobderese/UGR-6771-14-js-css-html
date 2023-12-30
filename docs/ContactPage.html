@@ -3,22 +3,21 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <link rel="stylesheet" href="CSS/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="CSS/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&family=Kaushan+Script&family=Uncial+Antiqua&display=swap"
       rel="stylesheet"
     />
-    <title>Project</title>
+    <title>Contact</title>
   </head>
   <body>
     <header>
       <h2 class="header__logo">Eyob Derese</h2>
       <nav>
         <ul class="header__navigation">
-          <li><a class="nav__item" href="HomePage.html">Home</a></li>
+          <li><a class="nav__item" href="index.html">Home</a></li>
           <li><a class="nav__item" href="AboutPage.html">About</a></li>
           <li><a class="nav__item" href="ProjectPage.html">Project</a></li>
           <li>
@@ -87,72 +86,39 @@
           </div>
         </section>
       </aside>
+
       <main>
-        <section class="card">
-          <figure class="card__image-content">
-            <img src="images/UAV.png" alt="Mosh Amedani" />
-
-            <figcaption>develop 2018, ownd by ASTU</figcaption>
-          </figure>
-          <div class="card__content">
-            <h1>Grade 10 UAV project</h1>
-            <p>
-              The UAV project was not just about technology; it was about
-              addressing a real-world challenge. The idea was to utilize UAVs as
-              airborne messengers, broadcasting vital announcements to areas
-              where conventional communication infrastructure was lacking. This
-              innovative approach had the potential to bring information,
-              connectivity, and a sense of community to places that had been on
-              the periphery of technological progress.
-            </p>
-          </div>
-        </section>
-
-        <section class="card">
-          <video class="card__video-content" controls muted>
-            <source src="images/gamehub.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-
-          <div class="card__content">
-            <h1>Game Hub</h1>
-            <p>
-              Create a comprehensive game-hub website that serves as a
-              centralized platform for gamers. The website will offer a range of
-              features to connect gamers, explore new titles, discuss
-              strategies, and stay updated on the latest trends in the gaming
-              world.click
-              <a
-                href="https://video-l3f0etit1-eyob-dereses-projects.vercel.app/"
-                >here</a
-              >
-              for website
-            </p>
-          </div>
-        </section>
-        <section class="card">
-          <figure class="card__image-content">
-            <img src="images/e-commerce.png" alt="e-commerce" />
-
-            <figcaption>UI disign of gebyaye E-commerce</figcaption>
-          </figure>
-          <div class="card__content">
-            <h1>E-commerce Project</h1>
-            <p>
-              it was about creating a digital ecosystem that empowered
-              businesses and delighted customers. From optimizing database
-              queries for efficiency to ensuring that every feature aligned with
-              the documented requirements, my journey was a constant pursuit of
-              excellence.
-            </p>
-          </div>
+        <section class="contact">
+          <h1 class="heading">Contact Me</h1>
+          <p>
+            If you want to know more about me or my work, or if you would just
+            like to say hello, send me a message. I'd love to hear from you.
+          </p>
+          <form action="post">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" />
+            <br />
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+            <br />
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              cols="30"
+              rows="10"
+              placeholder="whrite your message here..."
+            ></textarea>
+            <br />
+            <input type="submit" class="btn" />
+          </form>
+          <br />
         </section>
       </main>
     </div>
 
     <footer>
       <p class="footer__copyright">copyright &copy; 2023 devlelop by Eyob</p>
-
       <div class="footer__social-midea">
         <a href="#">
           <svg class="icon icon--white">
@@ -186,7 +152,6 @@
         </a>
       </div>
     </footer>
-
     <script src="Js/script.js"></script>
   </body>
 </html>
